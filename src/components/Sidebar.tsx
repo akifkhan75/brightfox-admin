@@ -2,10 +2,10 @@
 import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { NavItem, Friend } from '../types.ts';
+import { NavItem, Friend } from '../../types.ts';
 import { QuestionMarkCircleIcon, SparklesIcon } from './icons.tsx';
-import { AppDispatch, RootState } from '../src/app/store.ts';
-import { fetchFriends } from '../src/features/friends/friendsSlice.ts';
+import { AppDispatch, RootState } from '../../src/store/store.ts';
+import { fetchFriends } from '../store/slice/friends/friendsSlice.ts';
 
 interface SidebarProps {
   navItems: NavItem[];

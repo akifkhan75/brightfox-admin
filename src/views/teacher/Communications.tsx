@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Card } from '../../../components/common/Card.tsx';
-import { Button } from '../../../components/common/Button.tsx';
-import { Input } from '../../../components/common/Input.tsx';
-import { Modal } from '../../../components/common/Modal.tsx';
-import { PlusIcon } from '../../../components/icons.tsx';
-import { AppDispatch, RootState } from '../../app/store.ts';
-import { fetchMessages, markAsRead } from '../../features/messages/messagesSlice.ts';
+import { Card } from '../../components/common/Card.tsx';
+import { Button } from '../../components/common/Button.tsx';
+import { Input } from '../../components/common/Input.tsx';
+import { Modal } from '../../components/common/Modal.tsx';
+import { PlusIcon } from '../../components/icons.tsx';
+import { AppDispatch, RootState } from '../../store/store.ts';
+import { fetchMessages, markAsRead } from '../../store/slice/messages/messagesSlice.ts';
 import { Message } from '../../../types.ts';
 
 const Communications: React.FC = () => {

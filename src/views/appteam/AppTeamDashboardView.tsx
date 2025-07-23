@@ -1,12 +1,12 @@
 
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import AppTeamDashboard from '../src/views/appteam/Dashboard.tsx';
-import ContentModeration from '../src/views/appteam/ContentModeration.tsx';
-import UserManagement from '../src/views/appteam/UserManagement.tsx';
-import BusinessOperations from '../src/views/appteam/BusinessOperations.tsx';
-import Analytics from '../src/views/appteam/Analytics.tsx';
-import AppConfiguration from '../src/views/appteam/AppConfiguration.tsx';
+import AppTeamDashboard from './Dashboard.tsx';
+import ContentModeration from './ContentModeration.tsx';
+import UserManagement from './UserManagement.tsx';
+import BusinessOperations from './BusinessOperations.tsx';
+import Analytics from './Analytics.tsx';
+import AppConfiguration from './AppConfiguration.tsx';
 
 const AppTeamDashboardView: React.FC = () => {
   return (

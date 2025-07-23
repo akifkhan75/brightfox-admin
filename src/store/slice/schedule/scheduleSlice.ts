@@ -1,6 +1,6 @@
 
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { ScheduledItem } from '../../../types.ts';
+import { ScheduledItem } from '../../../../types.ts';
 
 interface ScheduleState {
   items: ScheduledItem[];

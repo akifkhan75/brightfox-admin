@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Card, CardHeader } from '../../../components/common/Card.tsx';
-import { Button } from '../../../components/common/Button.tsx';
-import { CurrencyDollarIcon } from '../../../components/icons.tsx';
+import { Card, CardHeader } from '../../components/common/Card.tsx';
+import { Button } from '../../components/common/Button.tsx';
+import { CurrencyDollarIcon } from '../../components/icons.tsx';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
-import { AppDispatch, RootState } from '../../app/store.ts';
-import { fetchEarningsSummary, fetchEarningsHistory } from '../../features/earnings/earningsSlice.ts';
+import { AppDispatch, RootState } from '../../store/store.ts';
+import { fetchEarningsSummary, fetchEarningsHistory } from '../../store/slice/earnings/earningsSlice.ts';
 import { Transaction } from '../../../types.ts';
 
 const StatCard = ({ title, value }: { title: string, value: string }) => (

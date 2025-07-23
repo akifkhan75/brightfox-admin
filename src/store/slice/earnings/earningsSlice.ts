@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
-import { EarningsSummary, EarningsHistory } from '../../../types.ts';
+import { EarningsSummary, EarningsHistory } from '../../../../types.ts';
 
 interface EarningsState {
   summary: EarningsSummary | null;

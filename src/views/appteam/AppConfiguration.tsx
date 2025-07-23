@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Card, CardHeader } from '../../../components/common/Card.tsx';
-import { Button } from '../../../components/common/Button.tsx';
-import { AppDispatch, RootState } from '../../app/store.ts';
-import { fetchConfig, updateConfig } from '../../features/appteam/configSlice.ts';
+import { Card, CardHeader } from '../../components/common/Card.tsx';
+import { Button } from '../../components/common/Button.tsx';
+import { AppDispatch, RootState } from '../../store/store.ts';
+import { fetchConfig, updateConfig } from '../../store/slice/appteam/configSlice.ts';
 import { AppConfig } from '../../../types.ts';
 
 // Custom-styled switch component

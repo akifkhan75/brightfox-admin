@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Card, CardHeader } from '../../../components/common/Card.tsx';
-import { Button } from '../../../components/common/Button.tsx';
-import { CurrencyDollarIcon, CheckCircleIcon } from '../../../components/icons.tsx';
-import { AppDispatch, RootState } from '../../app/store.ts';
-import { fetchPayouts, fetchSubscriptions } from '../../features/appteam/businessSlice.ts';
+import { Card, CardHeader } from '../../components/common/Card.tsx';
+import { Button } from '../../components/common/Button.tsx';
+import { CurrencyDollarIcon, CheckCircleIcon } from '../../components/icons.tsx';
+import { AppDispatch, RootState } from '../../store/store.ts';
+import { fetchPayouts, fetchSubscriptions } from '../../store/slice/appteam/businessSlice.ts';
 import { Payout, SubscriptionTier } from '../../../types.ts';
 
 const BusinessOperations: React.FC = () => {

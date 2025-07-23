@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Card, CardHeader } from '../../../components/common/Card.tsx';
-import { ArrowRightIcon, ChevronDownIcon, CurrencyDollarIcon, UsersIcon, LessonIcon } from '../../../components/icons.tsx';
+import { Card, CardHeader } from '../../../src/components/common/Card.tsx';
+import { ArrowRightIcon, ChevronDownIcon, CurrencyDollarIcon, UsersIcon, LessonIcon } from '../../../src/components/icons.tsx';
 import { LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { AppDispatch, RootState } from '../../app/store.ts';
-import { fetchAnalytics } from '../../features/appteam/analyticsSlice.ts';
+import { AppDispatch, RootState } from '../../store/store.ts';
+import { fetchAnalytics } from '../../store/slice/appteam/analyticsSlice.ts';
 
 const MetricCard = ({ title, value, change, icon: Icon }: { title: string, value: string, change: number, icon: React.FC<any> }) => {
     const isPositive = change >= 0;

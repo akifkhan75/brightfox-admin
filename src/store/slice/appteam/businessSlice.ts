@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
-import { Payout, SubscriptionTier } from '../../../types.ts';
+import { Payout, SubscriptionTier } from '../../../../types.ts';
 
 interface BusinessState {
   payouts: Payout[];

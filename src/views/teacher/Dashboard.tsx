@@ -1,15 +1,15 @@
 
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Card, CardHeader } from '../../../components/common/Card.tsx';
-import { Button } from '../../../components/common/Button.tsx';
+import { Card, CardHeader } from '../../components/common/Card.tsx';
+import { Button } from '../../components/common/Button.tsx';
 import { Course, ScheduledItem, ActivityData } from '../../../types.ts';
-import { ArrowRightIcon, ChevronDownIcon, EllipsisHorizontalIcon, PlusIcon, SparklesIcon, ClockIcon, SolidStarIcon } from '../../../components/icons.tsx';
+import { ArrowRightIcon, ChevronDownIcon, EllipsisHorizontalIcon, PlusIcon, SparklesIcon, ClockIcon, SolidStarIcon } from '../../components/icons.tsx';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
-import { AppDispatch, RootState } from '../../app/store.ts';
-import { fetchCourses } from '../../features/courses/coursesSlice.ts';
-import { fetchSchedule } from '../../features/schedule/scheduleSlice.ts';
-import { fetchActivity } from '../../features/activity/activitySlice.ts';
+import { AppDispatch, RootState } from '../../store/store.ts';
+import { fetchCourses } from '../../store/slice/courses/coursesSlice.ts';
+import { fetchSchedule } from '../../store/slice/schedule/scheduleSlice.ts';
+import { fetchActivity } from '../../store/slice/activity/activitySlice.ts';
 
 const TeacherDashboard: React.FC = () => {
     const dispatch: AppDispatch = useDispatch();

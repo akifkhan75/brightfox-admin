@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
-import { AnalyticsData } from '../../../types.ts';
+import { AnalyticsData } from '../../../../types.ts';
 
 interface AnalyticsState {
   data: AnalyticsData | null;

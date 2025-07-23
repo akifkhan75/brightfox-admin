@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
-import { Class } from '../../../types.ts';
+import { Class } from '../../../../types.ts';
 
 interface ClassesState {
   items: Class[];

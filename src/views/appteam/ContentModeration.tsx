@@ -1,12 +1,12 @@
 
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Card, CardHeader } from '../../../components/common/Card.tsx';
-import { Button } from '../../../components/common/Button.tsx';
+import { Card, CardHeader } from '../../components/common/Card.tsx';
+import { Button } from '../../components/common/Button.tsx';
 import { Course } from '../../../types.ts';
-import { CheckCircleIcon, XCircleIcon, SparklesIcon } from '../../../components/icons.tsx';
-import { AppDispatch, RootState } from '../../app/store.ts';
-import { fetchCourses } from '../../features/courses/coursesSlice.ts';
+import { CheckCircleIcon, XCircleIcon, SparklesIcon } from '../../components/icons.tsx';
+import { AppDispatch, RootState } from '../../store/store.ts';
+import { fetchCourses } from '../../store/slice/courses/coursesSlice.ts';
 
 interface ModerationItemProps {
   course: Course;

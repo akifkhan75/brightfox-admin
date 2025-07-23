@@ -1,6 +1,6 @@
 
 import { NavItem } from './types.ts';
-import { HomeIcon, InboxIcon, LessonIcon, TaskIcon, GroupIcon, ShieldCheckIcon, UsersIcon, ChartBarIcon, CurrencyDollarIcon, CogIcon, DocumentDuplicateIcon, VideoCameraIcon, PuzzlePieceIcon, QuestionMarkCircleIcon } from './components/icons.tsx';
+import { HomeIcon, InboxIcon, LessonIcon, TaskIcon, GroupIcon, ShieldCheckIcon, UsersIcon, ChartBarIcon, CurrencyDollarIcon, CogIcon, DocumentDuplicateIcon, VideoCameraIcon, PuzzlePieceIcon, QuestionMarkCircleIcon } from './src/components/icons.tsx';
 import React from 'react';
 
 export const TEACHER_NAV_ITEMS: NavItem[] = [
