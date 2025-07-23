@@ -1,13 +1,13 @@
 
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import TeacherDashboard from '../src/views/teacher/Dashboard.tsx';
-import CourseManager from '../src/views/teacher/CourseManager.tsx';
-import ContentStudio from '../src/views/teacher/ContentStudio.tsx';
-import ClassManagement from '../src/views/teacher/ClassManagement.tsx';
-import Communications from '../src/views/teacher/Communications.tsx';
-import Earnings from '../src/views/teacher/Earnings.tsx';
-import Profile from '../src/views/teacher/Profile.tsx';
+import TeacherDashboard from './Dashboard.tsx';
+import CourseManager from './CourseManager.tsx';
+import ContentStudio from './ContentStudio.tsx';
+import ClassManagement from './ClassManagement.tsx';
+import Communications from './Communications.tsx';
+import Earnings from './Earnings.tsx';
+import Profile from './Profile.tsx';
 
 const TeacherDashboardView: React.FC = () => {
   return (

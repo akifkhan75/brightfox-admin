@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Card, CardHeader } from '../../../components/common/Card.tsx';
+import { Card, CardHeader } from '../../components/common/Card.tsx';
 
 const AppTeamDashboard: React.FC = () => (
     <div className="p-8">

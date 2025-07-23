@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
-import { UserProfile } from '../../../types.ts';
+import { UserProfile } from '../../../../types.ts';
 
 interface ProfileState {
   data: UserProfile | null;

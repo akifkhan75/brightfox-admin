@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Card, CardHeader } from '../../../components/common/Card.tsx';
-import { Button } from '../../../components/common/Button.tsx';
-import { Input } from '../../../components/common/Input.tsx';
-import { SearchIcon, EllipsisHorizontalIcon } from '../../../components/icons.tsx';
-import { AppDispatch, RootState } from '../../app/store.ts';
-import { fetchAllUsers, updateUser } from '../../features/appteam/userManagementSlice.ts';
+import { Card, CardHeader } from '../../components/common/Card.tsx';
+import { Button } from '../../components/common/Button.tsx';
+import { Input } from '../../components/common/Input.tsx';
+import { SearchIcon, EllipsisHorizontalIcon } from '../../components/icons.tsx';
+import { AppDispatch, RootState } from '../../store/store.ts';
+import { fetchAllUsers, updateUser } from '../../store/slice/appteam/userManagementSlice.ts';
 import { AppUser, UserRole } from '../../../types.ts';
 
 const UserManagement: React.FC = () => {

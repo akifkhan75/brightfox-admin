@@ -1,9 +1,9 @@
 
 import React from 'react';
-import { Card, CardHeader } from '../../../components/common/Card.tsx';
-import { Button } from '../../../components/common/Button.tsx';
+import { Card, CardHeader } from '../../../src/components/common/Card.tsx';
+import { Button } from '../../../src/components/common/Button.tsx';
 import { CONTENT_TYPES } from '../../../constants.tsx';
-import { SparklesIcon, DocumentDuplicateIcon } from '../../../components/icons.tsx';
+import { SparklesIcon, DocumentDuplicateIcon } from '../../../src/components/icons.tsx';
 
 const ContentStudio: React.FC = () => (
     <div className="p-8">

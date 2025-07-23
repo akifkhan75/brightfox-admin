@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { SearchIcon, SunIcon, MoonIcon, BellIcon, CogIcon, PlusIcon, ChevronDownIcon } from './icons.tsx';
-import { UserRole } from '../types.ts';
+import { UserRole } from '../../types.ts';
 import { Input } from './common/Input.tsx';
 import { Button } from './common/Button.tsx';
 

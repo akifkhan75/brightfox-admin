@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
-import { AppConfig } from '../../../types.ts';
+import { AppConfig } from '../../../../types.ts';
 
 interface ConfigState {
   settings: AppConfig | null;

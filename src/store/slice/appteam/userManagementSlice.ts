@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
-import { AppUser } from '../../../types.ts';
+import { AppUser } from '../../../../types.ts';
 
 interface UserManagementState {
   users: AppUser[];

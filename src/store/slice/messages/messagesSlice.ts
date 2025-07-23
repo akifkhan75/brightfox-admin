@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
-import { Message } from '../../../types.ts';
+import { Message } from '../../../../types.ts';
 
 interface MessagesState {
   items: Message[];

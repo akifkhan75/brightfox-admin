@@ -1,11 +1,11 @@
 
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Card, CardHeader } from '../../../components/common/Card.tsx';
-import { Button } from '../../../components/common/Button.tsx';
-import { PlusIcon } from '../../../components/icons.tsx';
-import { AppDispatch, RootState } from '../../app/store.ts';
-import { fetchCourses } from '../../features/courses/coursesSlice.ts';
+import { Card, CardHeader } from '../../components/common/Card.tsx';
+import { Button } from '../../components/common/Button.tsx';
+import { PlusIcon } from '../../components/icons.tsx';
+import { AppDispatch, RootState } from '../../store/store.ts';
+import { fetchCourses } from '../../store/slice/courses/coursesSlice.ts';
 import { Course } from '../../../types.ts';
 
 const CourseManager: React.FC = () => {

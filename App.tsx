@@ -2,18 +2,18 @@
 import React, { useEffect, useMemo } from 'react';
 import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import Sidebar from './components/Sidebar.tsx';
-import Header from './components/Header.tsx';
-import TeacherDashboardView from './views/TeacherDashboardView.tsx';
-import AppTeamDashboardView from './views/AppTeamDashboardView.tsx';
+import Sidebar from './src/components/Sidebar.tsx';
+import Header from './src/components/Header.tsx';
+import TeacherDashboardView from './src/views/teacher/TeacherDashboardView.tsx';
+import AppTeamDashboardView from './src/views/appteam/AppTeamDashboardView.tsx';
 import { UserRole } from './types.ts';
 import { TEACHER_NAV_ITEMS, APP_TEAM_NAV_ITEMS } from './constants.tsx';
-import { Modal } from './components/common/Modal.tsx';
-import { Button } from './components/common/Button.tsx';
-import { Input } from './components/common/Input.tsx';
-import { RootState, AppDispatch } from './src/app/store.ts';
-import { toggleDarkMode, setModalOpen } from './src/features/ui/uiSlice.ts';
-import { setCurrentRole } from './src/features/user/userSlice.ts';
+import { Modal } from './src/components/common/Modal.tsx';
+import { Button } from './src/components/common/Button.tsx';
+import { Input } from './src/components/common/Input.tsx';
+import { RootState, AppDispatch } from './src/store/store.ts';
+import { toggleDarkMode, setModalOpen } from './src/store/slice/ui/uiSlice.ts';
+import { setCurrentRole } from './src/store/slice/user/userSlice.ts';
 
 const App: React.FC = () => {
   const dispatch: AppDispatch = useDispatch();

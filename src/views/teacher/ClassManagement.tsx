@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Card, CardHeader } from '../../../components/common/Card.tsx';
-import { Button } from '../../../components/common/Button.tsx';
-import { Input } from '../../../components/common/Input.tsx';
-import { Modal } from '../../../components/common/Modal.tsx';
-import { PlusIcon, UsersIcon, BellIcon } from '../../../components/icons.tsx';
-import { AppDispatch, RootState } from '../../app/store.ts';
-import { fetchClasses, createClass, sendAnnouncement } from '../../features/classes/classesSlice.ts';
+import { Card, CardHeader } from '../../components/common/Card.tsx';
+import { Button } from '../../components/common/Button.tsx';
+import { Input } from '../../components/common/Input.tsx';
+import { Modal } from '../../components/common/Modal.tsx';
+import { PlusIcon, UsersIcon, BellIcon } from '../../components/icons.tsx';
+import { AppDispatch, RootState } from '../../store/store.ts';
+import { fetchClasses, createClass, sendAnnouncement } from '../../store/slice/classes/classesSlice.ts';
 import { Class, Student } from '../../../types.ts';
 
 const ClassManagement: React.FC = () => {

@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { HashRouter } from 'react-router-dom';
 import App from './App.tsx';
-import { store } from './src/app/store.ts';
+import { store } from './src/store/store.ts';
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {

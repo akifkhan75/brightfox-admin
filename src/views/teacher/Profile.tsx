@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Card, CardHeader } from '../../../components/common/Card.tsx';
-import { Button } from '../../../components/common/Button.tsx';
-import { Input } from '../../../components/common/Input.tsx';
-import { ShieldCheckIcon } from '../../../components/icons.tsx';
-import { AppDispatch, RootState } from '../../app/store.ts';
-import { fetchProfile, updateProfile } from '../../features/profile/profileSlice.ts';
+import { Card, CardHeader } from '../../../src/components/common/Card.tsx';
+import { Button } from '../../../src/components/common/Button.tsx';
+import { Input } from '../../../src/components/common/Input.tsx';
+import { ShieldCheckIcon } from '../../../src/components/icons.tsx';
+import { AppDispatch, RootState } from '../../store/store.ts';
+import { fetchProfile, updateProfile } from '../../store/slice/profile/profileSlice.ts';
 
 const Profile: React.FC = () => {
     const dispatch: AppDispatch = useDispatch();

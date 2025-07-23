@@ -1,6 +1,6 @@
 
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { ActivityData } from '../../../types.ts';
+import { ActivityData } from '../../../../types.ts';
 
 interface ActivityState {
   data: ActivityData[];

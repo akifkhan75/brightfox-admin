@@ -1,21 +1,21 @@
 
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { Course } from '../../../types.ts';
+import { Friend } from '../../../../types.ts';
 
-interface CoursesState {
-  items: Course[];
+interface FriendsState {
+  items: Friend[];
   status: 'idle' | 'loading' | 'succeeded' | 'failed';
   error: string | null;
 }
 
-const initialState: CoursesState = {
+const initialState: FriendsState = {
   items: [],
   status: 'idle',
   error: null,
 };
 
-export const fetchCourses = createAsyncThunk<Course[]>('courses/fetchCourses', async () => {
-  const response = await fetch('/api/courses');
+export const fetchFriends = createAsyncThunk<Friend[]>('friends/fetchFriends', async () => {
+  const response = await fetch('/api/friends');
   if (!response.ok) {
     throw new Error('Server error!');
   }
@@ -23,24 +23,24 @@ export const fetchCourses = createAsyncThunk<Course[]>('courses/fetchCourses', a
   return data;
 });
 
-const coursesSlice = createSlice({
-  name: 'courses',
+const friendsSlice = createSlice({
+  name: 'friends',
   initialState,
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(fetchCourses.pending, (state) => {
+      .addCase(fetchFriends.pending, (state) => {
         state.status = 'loading';
       })
-      .addCase(fetchCourses.fulfilled, (state, action) => {
+      .addCase(fetchFriends.fulfilled, (state, action) => {
         state.status = 'succeeded';
         state.items = action.payload;
       })
-      .addCase(fetchCourses.rejected, (state, action) => {
+      .addCase(fetchFriends.rejected, (state, action) => {
         state.status = 'failed';
         state.error = action.error.message || 'Something went wrong';
       });
   },
 });
 
-export default coursesSlice.reducer;
+export default friendsSlice.reducer;
