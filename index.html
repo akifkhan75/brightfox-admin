@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WonderKid Admin Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class', // or 'media'
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#6D28D9', // purple-700
+              light: '#8B5CF6',   // purple-500
+              dark: '#5B21B6',    // purple-800
+            },
+            secondary: '#EC4899', // pink-500
+            accent: '#10B981', // emerald-500
+            lightbg: '#F9FAFB', // gray-50
+            darkbg: '#1F2937',  // gray-800
+            darkcard: '#374151' // gray-700
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    /* Custom scrollbar for webkit browsers */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+    .dark ::-webkit-scrollbar-track {
+      background: #2d3748; /* gray-800 */
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #c4b5fd; /* violet-300 */
+      border-radius: 10px;
+    }
+    .dark ::-webkit-scrollbar-thumb {
+      background: #6D28D9; /* primary */
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #a78bfa; /* violet-400 */
+    }
+    .dark ::-webkit-scrollbar-thumb:hover {
+      background: #8B5CF6; /* primary-light */
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.2",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@heroicons/react/": "https://esm.sh/@heroicons/react@^2.2.0/",
+    "recharts": "https://esm.sh/recharts@^2.15.3",
+    "@reduxjs/toolkit": "https://esm.sh/@reduxjs/toolkit@^2.2.6",
+    "react-redux": "https://esm.sh/react-redux@^9.1.2",
+    "express": "https://esm.sh/express@^5.1.0",
+    "cors": "https://esm.sh/cors@^2.8.5"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-lightbg dark:bg-darkbg antialiased">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

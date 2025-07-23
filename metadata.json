@@ -1,0 +1,6 @@
+{
+  "name": "WonderKid Admin Dashboard - v3",
+  "description": "seperate files for screens\nusing redux toolkit\nadd api integration\nadd node js backend",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
